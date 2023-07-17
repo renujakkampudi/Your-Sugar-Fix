@@ -1,0 +1,324 @@
+<?php
+session_start();
+if(!isset($_SESSION["username"])){
+header("Location: index.php");
+exit(); }
+?>
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home page</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <link rel="stylesheet" href="HomePage.css" />
+  </head>
+  <body>
+    <div id="all">
+      <div id="container">
+        <div id="animate"></div>
+      </div>
+    </div>
+
+    <div class="header">
+      <img src="Your Sugar FIx Logo.png" alt="logo" id="logo" />
+      <div class="nav-links">
+        <a href="HomePage.html">Home</a>
+        <a href="">About</a>
+        <a href="/Catalogue/Catalogue_items/Cakes.html">Catalogue</a>
+        <a href="">Contact Us</a>
+        <a href="">My account</a>
+        <a href="/Catalogue/Cart.html">Cart</a>
+      </div>
+    </div>
+
+    <hr color="#dc853d" />
+
+    <div class="child title">
+      <h1 class="vertical">Your Sugar Fix!</h1>
+    </div>
+
+    <div class="child home_page">
+      <h1>
+        Making every occassion a little sweeter <br />
+        with our <span id="s1"></span>
+      </h1>
+      <a
+        href="http://localhost:80/IWP Project/Catalogue/Catalogue_items/Cakes.html"
+        ><button type="button" id="button">Order Now</button></a
+      >
+    </div>
+
+    <!-- <div class="child_images">
+      <img src="choco.jpg" alt="" />
+    </div> -->
+
+    <div class="arrow bounce" id="bouncing-arrow"></div>
+
+    <div class="about_us">
+      <p>
+        Our bakery has first opened <br />
+        its doors in early 1900s <br />
+        by introducing a novel idea <br />
+        of freshly baked, made-to-order cakes <br />
+        and pastries by using the highest quality <br />
+        ingredients. Our specialties include a wide variety of <br />
+        breads, pastries, cookies, and cakes, all made fresh <br />
+        daily. Each tempting mouthful you eat contains <br />
+        meticulously hand-selected ingredients, from the <br />
+        rarest of chocolates to the most delicious & freshly <br />
+        produced jams. We are also happy to accommodate <br />
+        dietary restrictions by offering a selection of gluten-free <br />
+        and vegan options.
+        <br />
+        <br />
+        We can't wait to serve you!
+      </p>
+      <!-- <div class="about_us_img"><img src="home1.jpg" alt="" /></div>
+    </div> -->
+    <br />
+    <br />
+    <br /><br /><br /><br />
+
+    <!-- <div class="items">
+      <div class="bakery bread">
+        <img src="bread1.jpg" alt="Bread" />
+        <p>
+          Ingredient Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+          <br />
+          Blanditiis accusamus est placeat, repellat omnis dolor
+        </p>
+      </div>
+
+      <div class="bakery cake">
+        <img src="cake1.jpg" alt="Cake" />
+        <p>
+          Ingredients Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+          <br />
+          Molestiae itaque expedita ut ipsa, aliquid dolores et quia
+        </p>
+      </div>
+
+      <div class="bakery donuts">
+        <img src="donuts1.jpg" alt="Donuts" />
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. <br />
+          Sunt, facilis! Nobis natus, sint vitae sequi praesentium amet. Nostrum
+          quae,
+        </p>
+      </div>
+
+      <div class="bakery cookies">
+        <img src="cookie1.jpg" alt="Cookies" />
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. <br />
+          Rem dolore accusamus modi! Dignissimos commodi quis a ratione
+        </p>
+      </div>
+
+      <div class="bakery waffles">
+        <img src="waffles1.jpg" alt="Waffles" />
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. <br />
+          Voluptates facilis iste iure aspernatur voluptate facere excepturi
+        </p>
+      </div>
+
+      <div class="bakery tart">
+        <img src="tart1.jpg" alt="tart" />
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. <br />
+          Repellat iste reprehenderit aliquam nobis cupiditate voluptatum
+        </p>
+      </div>
+    </div>
+    <br /><br /><br /><br /><br /> -->
+    <hr />
+
+    <div class="footer-container">
+      <div class="footer">
+        <div class="footer-heading footer-1">
+          <h2>Explore</h2>
+          <a href="#">Order Online</a>
+          <a href="#">Our Ingredients</a>
+          <a href="#">About Us</a>
+        </div>
+        <div class="footer-heading footer-2">
+          <h2>Your Profile</h2>
+          <a href="index.php">Sign In</a>
+          <a href="registration.php">Create Account</a>
+          <a href="#">Wishlist</a>
+          <a href="#">Your orders</a>
+        </div>
+        <div class="footer-heading footer-3">
+          <h2>Help</h2>
+          <a href="http://localhost:80/IWP Project/Footer/Feedback.php"
+            >Feedback</a
+          >
+          <a href="http://localhost:80/IWP Project/Footer/PrivacyPolicy.php"
+            >Privacy Policy</a
+          >
+          <a
+            href="http://localhost:80/IWP Project/Footer/TermsAndConditions.php"
+            >Terms and conditions</a
+          >
+        </div>
+      </div>
+      <hr />
+
+      <h3>Connect with us</h3>
+      <div class="socialMediaIcons">
+        <div class="wrapper">
+          <div class="icon facebook">
+            <span class="tooltip">Facebook</span>
+            <span><i class="fab fa-facebook-f"></i></span>
+          </div>
+          <div class="icon twitter">
+            <span class="tooltip">Twitter</span>
+            <span><i class="fab fa-twitter"></i></span>
+          </div>
+          <div class="icon instagram">
+            <span class="tooltip">Instagram</span>
+            <span><i class="fab fa-instagram"></i></span>
+          </div>
+          <div class="icon github">
+            <span class="tooltip">Github</span>
+            <span><i class="fab fa-github"></i></span>
+          </div>
+          <div class="icon youtube">
+            <span class="tooltip">Youtube</span>
+            <span><i class="fab fa-youtube"></i></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script>
+    var container = document.getElementById("animate");
+    var emoji = ["🍰", "🍪", "🍫", "🧁", "🍬", "🍩", "🍨", "🍭"];
+    var circles = [];
+    for (var i = 0; i < 1; i++) {
+      addCircle(
+        i * 200,
+        [10 + 0, 300],
+        emoji[Math.floor(Math.random() * emoji.length)]
+      );
+      addCircle(
+        i * 200,
+        [10 + 0, -200],
+        emoji[Math.floor(Math.random() * emoji.length)]
+      );
+      addCircle(
+        i * 200,
+        [10 - 200, -200],
+        emoji[Math.floor(Math.random() * emoji.length)]
+      );
+      addCircle(
+        i * 200,
+        [10 + 200, 300],
+        emoji[Math.floor(Math.random() * emoji.length)]
+      );
+      addCircle(
+        i * 200,
+        [10 - 400, -200],
+        emoji[Math.floor(Math.random() * emoji.length)]
+      );
+      addCircle(
+        i * 200,
+        [10 + 400, 300],
+        emoji[Math.floor(Math.random() * emoji.length)]
+      );
+      addCircle(
+        i * 200,
+        [10 - 600, -200],
+        emoji[Math.floor(Math.random() * emoji.length)]
+      );
+      addCircle(
+        i * 200,
+        [10 + 600, 300],
+        emoji[Math.floor(Math.random() * emoji.length)]
+      );
+    }
+
+    function addCircle(delay, range, color) {
+      setTimeout(function () {
+        var c = new Circle(
+          range[0] + Math.random() * range[1],
+          80 + Math.random() * 3,
+          color,
+          {
+            x: -0.15 + Math.random() * 0.1,
+            y: 1 + Math.random() * 1,
+          },
+          range
+        );
+        circles.push(c);
+      }, delay);
+    }
+
+    function Circle(x, y, c, v, range) {
+      var _this = this;
+      this.x = x;
+      this.y = y;
+      this.color = c;
+      this.v = v;
+      this.range = range;
+      this.element = document.createElement("span");
+      /this.element.style.display = 'block';/;
+      this.element.style.opacity = 0;
+      this.element.style.position = "absolute";
+      this.element.style.zIndex = -1;
+      this.element.style.fontSize = "13px";
+      this.element.style.color =
+        "hsl(" + ((Math.random() * 360) | 0) + ",80%,50%)";
+      this.element.innerHTML = c;
+      container.appendChild(this.element);
+      this.update = function () {
+        if (_this.y > 800) {
+          _this.y = 80 + Math.random() * 4;
+          _this.x = _this.range[0] + Math.random() * _this.range[1];
+        }
+        _this.y += _this.v.y;
+        _this.x += _this.v.x;
+        this.element.style.opacity = 1;
+        this.element.style.transform =
+          "translate3d(" + _this.x + "px, " + _this.y + "px, 0px)";
+        this.element.style.webkitTransform =
+          "translate3d(" + _this.x + "px, " + _this.y + "px, 0px)";
+        this.element.style.mozTransform =
+          "translate3d(" + _this.x + "px, " + _this.y + "px, 0px)";
+      };
+    }
+
+    function animate() {
+      for (var i in circles) {
+        circles[i].update();
+      }
+      requestAnimationFrame(animate);
+    }
+
+    animate();
+
+    // Waiting for the document to finish loading
+    document.addEventListener("DOMContentLoaded", function () {
+      var bouncingArrow = document.getElementById("bouncing-arrow");
+
+      // Click event listener to the bouncing arrow
+      bouncingArrow.addEventListener("click", function () {
+        // Scrolling down the page by 1000 pixels
+        window.scrollBy({
+          top: 1000,
+          behavior: "smooth",
+        });
+
+        // Hiding the bouncing arrow
+        bouncingArrow.style.display = "none";
+      });
+    });
+  </script>
+</html>
