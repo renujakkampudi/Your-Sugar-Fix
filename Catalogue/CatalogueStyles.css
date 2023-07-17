@@ -1,0 +1,387 @@
+body {
+  background: linear-gradient(
+    to right bottom,
+    #332421,
+    #4a2d27,
+    #62362c,
+    #7a3f31,
+    #924936
+  );
+  background-repeat: no-repeat;
+  color: #dc853d;
+  font-family: sans-serif;
+}
+
+#logo {
+  /* position: sticky;
+  top: 10px;
+  left: 10px; */
+  height: 125px;
+  width: 125px;
+  border-radius: 50%;
+}
+
+.header {
+  font-family: "Sans Serif";
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* padding: 10px; */
+}
+
+.header * {
+  box-sizing: border-box;
+  transition: all 0.35s ease;
+}
+
+.header li {
+  /* display: inline-block; */
+  list-style: outside none none;
+  float: right;
+  margin: 0.5em 1em;
+  padding-top: 50px;
+  padding-right: 8px;
+}
+
+.header a {
+  padding: 0.5em 0.8em;
+  color: #dc853d;
+  position: relative;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.header a::before,
+.header a::after {
+  content: "";
+  height: 14px;
+  width: 14px;
+  position: absolute;
+  transition: all 0.35s ease;
+  opacity: 0;
+}
+
+.header a::before {
+  content: "";
+  right: 0;
+  top: 0;
+  border-top: 3px solid #dc4981;
+  border-right: 3px solid #dc4981;
+  transform: translate(-100%, 50%);
+}
+
+.header a:after {
+  content: "";
+  left: 0;
+  bottom: 0;
+  border-bottom: 3px solid #dc4981;
+  border-left: 3px solid #dc4981;
+  transform: translate(100%, -50%);
+}
+
+.header a:hover:before,
+.header a:hover:after {
+  transform: translate(0, 0);
+  opacity: 1;
+}
+
+.header a:hover {
+  color: #eacd6e;
+}
+
+.sidebar {
+  width: 200px;
+  /* top: 60%; */
+  float: left;
+  padding-top: 10%;
+  padding-left: 5%;
+  box-sizing: border-box;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar li {
+  margin-bottom: 10px;
+}
+
+.sidebar li a {
+  padding: 10px;
+  text-decoration: none;
+  display: block;
+  /* border-bottom: 1px solid #ccc; */
+  font-size: 20px;
+  color: #dc853d;
+}
+
+.sidebar li a:hover {
+  color: #dc4981;
+}
+.main {
+  margin-left: 200px;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.main h2 {
+  text-align: center;
+  font-size: 30px;
+}
+
+.cake-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 50px;
+}
+
+.cake {
+  margin: 20px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.cake a:hover img {
+  transform: scale(1.05);
+  transition: transform 0.3s ease-in-out;
+}
+
+.cake a {
+  display: block;
+}
+
+.cake img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+  display: block;
+  transition: transform 0.3s ease-in-out;
+}
+
+.cake h4,
+.cake p {
+  margin: 10px 0;
+  font-size: 19px;
+  /* color: #dc4981; */
+}
+
+.item-description {
+  display: flex;
+}
+
+.image {
+  height: 50%;
+  width: 50%;
+  padding-top: 100px;
+  padding-left: 100px;
+  /* display: flex; */
+}
+
+.image img {
+  height: 60%;
+  width: 60%;
+}
+
+.description {
+  font-size: 20px;
+  /* float: right; */
+  /* display: flex; */
+  height: 50%;
+  width: 50%;
+}
+
+.cake-radio {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.cake-size {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+input[type="radio"] {
+  margin-right: 10px;
+}
+
+label {
+  font-weight: bold;
+}
+
+.cake-size p {
+  margin: 0;
+}
+
+/* .submit {
+  height: 50%;
+  width: 50%;
+} */
+
+button {
+  font-size: 20px;
+  padding: 12px 26px;
+  border-radius: 40px;
+  width: auto;
+  color: #fff;
+  background-color: #dc853d;
+  border-color: #dc4981;
+  cursor: pointer;
+  box-shadow: 0px 8px 8px 0px rgba(0, 0, 0, 0.08);
+}
+button:hover {
+  color: white;
+}
+button {
+  width: 25%;
+}
+
+.footer {
+  text-align: center;
+  width: 100%;
+  color: #dc853d;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  padding: 20px 0px 20px 0px;
+}
+.footer-heading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0px 2% 0px 2%;
+}
+.footer-heading h2 {
+  margin-bottom: 1rem;
+}
+.footer-heading a {
+  color: #dc853d;
+  text-decoration: none;
+  margin-bottom: 1rem;
+  font-size: 18px;
+}
+.footer-heading a:hover {
+  color: #dc4981;
+  transition: 0.3s ease-out;
+}
+hr {
+  height: 1px;
+  background-color: #dc853d;
+  border: none;
+}
+h3 {
+  font-weight: bold;
+  font-size: 25px;
+  text-align: center;
+  color: #dc853d;
+}
+
+.socialMediaIcons {
+  text-align: center;
+}
+.wrapper {
+  display: inline-flex;
+  list-style: none;
+  /* align-items: center; */
+}
+
+.wrapper .icon {
+  position: relative;
+  background: #dc853d;
+  color: #ffffff;
+  border-radius: 50%;
+  padding: 15px;
+  margin: 10px;
+  width: 25px;
+  height: 25px;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.wrapper .tooltip {
+  position: absolute;
+  top: 0;
+  font-size: 14px;
+  /* background: #cd201f;
+  color: #ffffff; */
+  padding: 5px 8px;
+  border-radius: 5px;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.wrapper .tooltip::before {
+  position: absolute;
+  content: "";
+  height: 8px;
+  width: 8px;
+  /* background: #cd201f; */
+  bottom: -3px;
+  left: 50%;
+  transform: translate(-50%) rotate(45deg);
+  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.wrapper .icon:hover .tooltip {
+  top: -45px;
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+
+.wrapper .icon:hover span,
+.wrapper .icon:hover .tooltip {
+  text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.1);
+}
+
+.wrapper .facebook:hover,
+.wrapper .facebook:hover .tooltip,
+.wrapper .facebook:hover .tooltip::before {
+  background: #1877f2;
+  color: #ffffff;
+}
+
+.wrapper .twitter:hover,
+.wrapper .twitter:hover .tooltip,
+.wrapper .twitter:hover .tooltip::before {
+  background: #1da1f2;
+  color: #ffffff;
+}
+
+.wrapper .instagram:hover,
+.wrapper .instagram:hover .tooltip,
+.wrapper .instagram:hover .tooltip::before {
+  background: #e4405f;
+  color: #ffffff;
+}
+
+.wrapper .github:hover,
+.wrapper .github:hover .tooltip,
+.wrapper .github:hover .tooltip::before {
+  background: #333333;
+  color: #ffffff;
+}
+
+.wrapper .youtube:hover,
+.wrapper .youtube:hover .tooltip,
+.wrapper .youtube:hover .tooltip::before {
+  background: #cd201f;
+  color: #ffffff;
+}
